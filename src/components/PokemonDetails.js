@@ -8,12 +8,10 @@ export default function PokemonDetails({ pokemon }) {
   return (
     <div className="details-container">
 
-      {/* Botão para voltar */}
       <Link href="/" className="back-button">
         ← Voltar para Pokédex
       </Link>
 
-      {/* Informações principais */}
       <section className="details-hero">
 
         <div className="details-image">
@@ -31,7 +29,6 @@ export default function PokemonDetails({ pokemon }) {
 
           <h1>{pokemon.name}</h1>
 
-          {/* Tipos */}
           <div className="pokemon-types">
             {pokemon.types.map((item) => (
               <span
@@ -43,7 +40,6 @@ export default function PokemonDetails({ pokemon }) {
             ))}
           </div>
 
-          {/* Informações básicas */}
           <div className="basic-info">
 
             <div>
